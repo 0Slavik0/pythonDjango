@@ -1,0 +1,21 @@
+{% extends 'flatpages/default_page.html' %}
+
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+<h1 style="text-align: center;"><em>Доброго времени суток мой <span style="text-decoration: underline;">дорогой гость</span>.</em>&nbsp;</h1>
+<p class="lead" style="text-align: center;">Прошу оценить проделанную работу по созданию статических страниц. Воспользуйтесь этим простейшим меню ниже для перехода на другие страницы.</p>
+<table style="height: 100px; margin-left: auto; margin-right: auto;" width="1000">
+<tbody>
+<tr>
+<td style="width: 247.969px; text-align: center; background-color: #999999;"><a href="http://127.0.0.1:8000/git/" style="color: #ffffff;">Страница с форматированным текстом</a></td>
+<td style="width: 247.969px; text-align: center; background-color: #808080;"><a href="http://127.0.0.1:8000/pop/" style="color: #ffffff;">Страница с повторением</a></td>
+<td style="width: 248.062px; text-align: center; background-color: #333333;"><a href="http://127.0.0.1:8000/about/" target="_blank" style="color: #ffffff;">Страница без названия(доступна только для вошедших на сайт пользователям)</a></td>
+</tr>
+</tbody>
+</table>
+{{ flatpage.content }}
+{% endblock content %}
